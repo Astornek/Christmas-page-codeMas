@@ -1,0 +1,92 @@
+.footer {
+  background-image: url("https://icodethis.com/images/iCodeMas/footer_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  gap: 6rem;
+  color: white;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  padding: 3.5rem 2rem;
+  flex-wrap: wrap;
+}
+.footer img {
+  position: absolute;
+  right: 0%;
+  height: 200px;
+  bottom: 0;
+}
+.footer-des-box {
+  max-width: 15rem;
+  width: 95%;
+}
+.footer h3 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.footer-des {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+.footer-list {
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+}
+.copyrights {
+  font-size: 0.8rem;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.footer h4 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.footer-list ul li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 0.8rem;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 0.2rem;
+  width: max-content;
+}
+
+.footer li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--orange-clr);
+  transition: width 0.4s ease;
+}
+
+.footer li:hover::before {
+  width: 100%;
+}
+@media (max-width: 880px) {
+  .footer {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-list {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .footer {
+    gap: 3rem;
+  }
+  .footer-lst {
+    gap: 3rem;
+  }
+}
